@@ -1,0 +1,41 @@
+api requests
+------------
+
+1. Add books ->> (title, author, preface, cover image url) - post 
+2. access books - get
+
+3. Add new category ->> category name - post
+4. Access category - get
+5. drag and drop - update category
+
+6. book delete ->> id - delete
+7. category delete ->> id - delete
+
+import 
+------
+import 
+require  
+
+CORS (cross rigin resource sharing)
+-----------------------------------
+library used to connect front-end with server
+
+command for installation - npm i cors
+
+
+
+server creation in main.jsx
+1. import json_server using require
+2. create server using create function and store it inside a function
+3. import cors for connect frontend
+4. say bookServer to use cors for connecting using use function
+5. create middleware for convert json to javaScript by using defaults
+6. say bookserver to use the middleware
+7. create a file db.json. all datas are comes into this file
+8. create a router for transfer the request to the db.json file, import router and give path
+9. say bookServer to use the router by using the function 'use'
+
+10. choose a port for running the server not use frontend running port
+11. set a port like 'const PORT = 8000'
+12 . Make the server run by using the command - '.listen()
+
